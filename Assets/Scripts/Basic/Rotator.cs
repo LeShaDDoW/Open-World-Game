@@ -5,6 +5,7 @@ using UnityEngine;
 public class Rotator : MonoBehaviour
 {
     public bool sky;
+    public Transform player;
 
     public float speed;
 
@@ -13,6 +14,7 @@ public class Rotator : MonoBehaviour
         if (sky)
         {
             transform.Rotate(Vector3.forward, speed * Time.deltaTime);
+            transform.position = player.position;
         }
     }
 }

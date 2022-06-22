@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Maximum Amount of rotation a slope can have for the Player to walk on it!")] public float maxSlopeAngle = 35f;
 
     //Crouch & Slide
-    private Vector3 crouchScale = new Vector3(1, 0.5f, 1);
+    private Vector3 crouchScale = new Vector3(1, 0.25f, 1);
     private Vector3 playerScale;
 
     [Header("Sliding")]
