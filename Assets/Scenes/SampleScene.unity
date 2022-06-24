@@ -1013,7 +1013,7 @@ Camera:
   m_GameObject: {fileID: 330585543}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 4
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -1029,7 +1029,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 60
+  field of view: 90.9
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1055,7 +1055,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -4.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3725,7 +3725,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084729590}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.655348, y: 2.2001424, z: -4.007212}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3748,7 +3748,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   switchableView: 1
   player: {fileID: 1540934891}
-  distance: -5
+  distance: 5
+  mainCamera: {fileID: 330585546}
+  thirdPersonLayerMask:
+    serializedVersion: 2
+    m_Bits: 63
 --- !u!1 &1089115784
 GameObject:
   m_ObjectHideFlags: 0
@@ -4049,7 +4053,7 @@ GameObject:
   - component: {fileID: 1193225116}
   - component: {fileID: 1193225115}
   - component: {fileID: 1193225114}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
