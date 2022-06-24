@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [Header("Assignables")]
     [Tooltip("The 'Camera' GameObject but not the Main Camera!")] public Transform playerCam;
     [Tooltip("The Orientation GameObject under the Player!")] public Transform orientation;
+    [Tooltip("The Animated Player Model!")] public Animator playerAnimator;
 
     //Other
     private Rigidbody rb;
@@ -115,6 +116,10 @@ public class PlayerController : MonoBehaviour
     private void Movement()
     {
 
+        if(grounded) playerAnimator.SetBool("isJumping", false);
+
+        if(x > 0 || x < 0 || y > 0 || y < 0) playerAnimator.SetBool("isRunning", true);
+
         //Extra gravity
         rb.AddForce(Vector3.down * Time.deltaTime * 30);
 
@@ -166,6 +171,8 @@ public class PlayerController : MonoBehaviour
     {
         if (grounded && readyToJump)
         {
+            playerAnimator.SetBool("isJumping", true);
+
             readyToJump = false;
 
             //Add jump forces
