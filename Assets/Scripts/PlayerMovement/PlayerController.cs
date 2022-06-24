@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [Header("Assignables")]
     [Tooltip("The 'Camera' GameObject but not the Main Camera!")] public Transform playerCam;
     [Tooltip("The Orientation GameObject under the Player!")] public Transform orientation;
-    [Tooltip("The Animated Player Model!")] public Animator playerAnimator;
+    [Tooltip("The 'Body' Object from the Player Model!")] public Animator playerAnimator;
 
     //Other
     private Rigidbody rb;
