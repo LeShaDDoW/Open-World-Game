@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     //Assingables
     [Header("Assignables")]
     [Tooltip("The 'Camera' GameObject but not the Main Camera!")] public Transform playerCam;
+    [Tooltip("The Main Camera but not the 'Camera'!")] public Transform mainCam;
     [Tooltip("The Orientation GameObject under the Player!")] public Transform orientation;
     [Tooltip("The Body Object from the Player Model!")] public Animator playerAnimator;
 
@@ -45,6 +46,14 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Now Now bois don't touch that stuff!")] public bool grounded;
     [Tooltip("How high the jump is!")] public float jumpForce = 550f;
 
+    [Header("Dont touch that!")]
+    public bool inCar = false;
+
+    [Header("Other")]
+    [Tooltip("Only Enable The Car Layer!")] public LayerMask carLayerMask;
+
+    Transform carTransform;
+
     //Input
     float x, y;
     bool jumping, sprinting, crouching;
@@ -68,7 +77,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Movement();
+        if(!inCar) Movement();
     }
 
     private void Update()
@@ -87,11 +96,29 @@ public class PlayerController : MonoBehaviour
         jumping = Input.GetButton("Jump");
         crouching = Input.GetButton("Fire3");
 
-        //Crouching
-        if (Input.GetButtonDown("Fire3"))
-            StartCrouch();
-        if (Input.GetButtonUp("Fire3"))
-            StopCrouch();
+        if(!inCar)
+        {
+            //Crouching
+            if (Input.GetButtonDown("Fire3"))
+                StartCrouch();
+            if (Input.GetButtonUp("Fire3"))
+                StopCrouch();
+
+            // Going In Car
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                RaycastHit hit;
+                if (Physics.Raycast(playerCam.position, playerCam.forward, out hit, Mathf.Infinity, carLayerMask))
+                {
+                    carTransform = hit.collider.transform;
+                    transform.parent = carTransform;
+                    transform.localPosition = new Vector3(0.393f, 0.533f, 0.625f);
+                    inCar = true;
+                    rb.isKinematic = true;
+                    GetComponent<Collider>().enabled = false;
+                }
+            }
+        }
     }
 
     private void StartCrouch()
