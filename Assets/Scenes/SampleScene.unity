@@ -5053,7 +5053,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &781223927
 Transform:
   m_ObjectHideFlags: 0
@@ -7789,7 +7789,7 @@ MonoBehaviour:
   orientation: {fileID: 852406932}
   playerAnimator: {fileID: 781223928}
   moveSpeed: 5042
-  maxSpeed: 39
+  maxSpeed: 10.5
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
