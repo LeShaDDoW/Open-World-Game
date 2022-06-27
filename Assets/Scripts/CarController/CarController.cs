@@ -14,8 +14,6 @@ public class CarController : MonoBehaviour
     float turnInput;
     float newRotation;
 
-    bool grounded = true;
-
     private void Start()
     {
         sphereRb.transform.parent = null;
@@ -23,9 +21,8 @@ public class CarController : MonoBehaviour
 
     void Update()
     {
-        if(player.inCar == true) GetInput();
-        if(Physics.SphereCast(sphereRb.transform.position, .1f, Vector3.down, out RaycastHit hit)) grounded = true;
-        else grounded = false;
+        if (player.inCar == true) GetInput();
+        sphereRb.AddForce(Vector3.down * Time.deltaTime * 3000, ForceMode.Acceleration);
     }
 
     private void FixedUpdate()
@@ -38,15 +35,16 @@ public class CarController : MonoBehaviour
         transform.position = sphereRb.transform.position;
         sphereRb.AddForce(transform.forward * moveInput, ForceMode.Acceleration);
 
+        //GetComponent<Rigidbody>().AddTorque(new Vector3(0, newRotation, 0));
         transform.Rotate(0, newRotation, 0, Space.World);
     }
 
     void GetInput()
     {
         moveInput = Input.GetAxisRaw("Vertical");
-        turnInput = Input.GetAxisRaw("Horizontal");
+        turnInput = Input.GetAxis/*Raw*/("Horizontal");
         moveInput *= moveInput > 0 ? fwdSpeed : revSpeed;
-        newRotation = moveInput >= 0 ? turnInput * turnSpeed * Time.deltaTime : -turnInput * turnSpeed * Time.deltaTime;
+        newRotation = turnInput * turnSpeed * Time.deltaTime * moveInput;
     }
 
     

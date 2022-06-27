@@ -1,0 +1,196 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.0f1 (6eacc8284459) revision 7253192'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Professional' Language: 'de' Physical Memory: 16309 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\Editors\2021.3.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker22
+-projectPath
+D:/Unity/Projects/Open World Game
+-logFile
+Logs/AssetImportWorker22.log
+-srvPort
+61709
+Successfully changed project path to: D:/Unity/Projects/Open World Game
+D:/Unity/Projects/Open World Game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+mdb reader table full -> cleaning up stale readers. Current readers:
+    pid     thread     txnid
+     22328 7748 -
+     22328 6c44 -
+     27080 245c -
+     21432 3f70 -
+     22328 482c -
+     22328 6b84 -
+     22328 1980 -
+     22328 6b34 -
+     22328 3c20 -
+     22328 1d5c -
+     20000 1394 12329
+     26408 1a68 12329
+     22328 4928 -
+     22328 665c -
+     22328 3658 -
+     22328 7a8c -
+     22328 79a0 -
+     22328 41cc -
+     22328 192c -
+     22328 1b78 -
+     22328 1684 -
+     22328 6768 -
+     22328 6390 -
+     22328 7220 -
+     22328 7bb8 -
+     22328 52f4 -
+     22328 e60 -
+     22328 5ba0 -
+     22328 7b10 -
+     22328 3e98 -
+     22328 47e0 -
+     22328 6028 -
+     22328 158 -
+     22328 3cf0 -
+     22328 7a9c -
+     22328 46f0 -
+     22328 2ee0 -
+     22328 64bc -
+     22328 6104 -
+     22328 4740 -
+     22328 5488 -
+     22328 338c -
+     22328 393c -
+     22328 259c -
+     22328 69cc -
+     22328 28b0 -
+     22328 464c -
+     22328 3100 -
+     22328 59f8 -
+     22328 6f08 -
+     22328 24e8 -
+     22328 3688 -
+     22328 3e70 -
+     22328 7158 -
+     22328 1d20 -
+     22328 13d8 -
+     22328 6b98 -
+     30280 2dd4 -
+     22196 452c 13169
+     22328 5b10 -
+     29192 1624 -
+     16848 6980 -
+     32736 7848 -
+     26684 3058 13171
+     22328 7c9c -
+     22328 1ef0 -
+     22328 19f8 -
+     22328 47f4 -
+     22328 2ff4 -
+     22328 34e4 -
+     22328 5c1c -
+     22328 804 -
+     22328 7f6c -
+     22328 807c -
+     22328 53cc -
+     22328 3dd4 -
+     22328 2b4c -
+     22328 335c -
+     22328 5df0 -
+     22328 35d8 -
+     22328 79cc -
+     22328 36f4 -
+     22328 2fac -
+     22328 28a4 -
+     22328 60cc -
+     22328 18b8 -
+     22328 656c -
+     22328 5854 -
+     22328 8064 -
+     22328 3af4 -
+     22328 2794 -
+     22328 aa8 -
+     22328 71e0 -
+     22328 28f0 -
+     21212 7c50 -
+     22328 141c -
+     22328 7b40 -
+     22328 30c8 -
+     22328 68d4 -
+     22328 46cc -
+     22328 3978 -
+     22328 78c4 -
+     22328 5b8 -
+     22328 65bc -
+     18880 8374 -
+     31612 8034 -
+      3044 6040 -
+     15776 7dfc -
+     20996 5428 -
+     20948 4278 -
+     22328 7f58 -
+      4996 3110 -
+     22328 1b34 -
+     22328 e2c -
+     22328 3c10 -
+     22328 1d60 -
+     22328 7c44 -
+     22328 2188 -
+     22328 1094 -
+     22328 4cc8 -
+     22328 2ed8 -
+     22328 7de8 -
+     34056 41dc -
+     21124 502c -
+     24820 483c -
+     39084 9dd0 13984
+Cleaned out 20 stale readers
+Refreshing native plugins compatible for Editor in 19908.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.0f1 (6eacc8284459)
+[Subsystems] Discovering subsystems at path D:/Unity/Editors/2021.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity/Projects/Open World Game/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Vendor:   NVIDIA
+    VRAM:     12143 MB
+    Driver:   30.0.14.9729
+Initialize mono
+Mono path[0] = 'D:/Unity/Editors/2021.3.0f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/Editors/2021.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/Editors/2021.3.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56820
+Begin MonoManager ReloadAssembly

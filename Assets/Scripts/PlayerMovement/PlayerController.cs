@@ -118,6 +118,20 @@ public class PlayerController : MonoBehaviour
                     GetComponent<Collider>().enabled = false;
                 }
             }
+        } else
+        {
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                transform.position = new Vector3(transform.position.x, transform.position.y + 10, 
+                    transform.position.z);
+                carTransform = null;
+                transform.parent = null;
+                playerCam.rotation = Quaternion.identity;
+                transform.rotation = Quaternion.identity;
+                inCar = false;
+                rb.isKinematic = false;
+                GetComponent<Collider>().enabled = true;
+            }
         }
     }
 
